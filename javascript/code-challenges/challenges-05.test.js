@@ -56,6 +56,12 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  let count = 0;
+
+  for (let index = 0; index < arr.length; index++) {
+    count++;
+  }
+  return count;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -119,6 +125,9 @@ let starWarsData = [
 
 const returnNames = (arr) => {
   // Solution code here...
+  return arr.reduce((acc, cur) => {
+    acc + cur.name;
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,9 +137,17 @@ Write a function named reversedString that takes in a string and returns a strin
 
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
-
+//resource https://dev.to/sarah_chima/reverse-a-string-four-javascript-solutions-2nbm
 const reversedString = (str) => {
   // Solution code here...
+  const array = str.split("");
+
+  //use the reduce method to convert the array to a reversed string
+  const reversedString = array.reduce((reversed, character) => {
+    return character + reversed;
+  }, "");
+
+  return reversedString;
 };
 
 /* ------------------------------------------------------------------------------------------------
