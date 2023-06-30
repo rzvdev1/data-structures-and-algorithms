@@ -77,11 +77,9 @@ const standardizePhoneNumbers = (arr) => {
   const newArr = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].toString().replace("(", "")) {
-      newArr.push(arr[i]);
-    }
+    const newStr = arr[i].replace(/\D/g, "");
+    newArr.push(newStr);
   }
-
   return newArr;
 };
 

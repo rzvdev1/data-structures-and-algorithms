@@ -123,11 +123,13 @@ let starWarsData = [
   },
 ];
 
+//It should return an array continaing the names of the characters
 const returnNames = (arr) => {
   // Solution code here...
   return arr.reduce((acc, cur) => {
-    acc + cur.name;
-  }, 0);
+    acc.push(cur.name);
+    return acc;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------

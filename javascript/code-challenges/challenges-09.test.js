@@ -139,15 +139,15 @@ const characters = [
     house: "Snow",
   },
 ];
-
+//It should return an array of the names of the houses
 const getHouses = (arr) => {
-  let houses = [];
+  // Solution code here...
+  const result = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].house && !houses.includes(arr[i].house)) {
-      houses.push(arr[i].house);
-    }
+    const house = arr[i].house;
+    result.push(house);
   }
-  return houses;
+  return result;
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -165,12 +165,13 @@ hasChildrenValues(characters, 'Sansa') will return false
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
 
-  for (var key in arr) {
-    if (character[key] === arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const name = arr[i].name;
+    const children = arr[i].children;
+    if (name === character && children) {
       return true;
     }
   }
-
   return false;
 };
 

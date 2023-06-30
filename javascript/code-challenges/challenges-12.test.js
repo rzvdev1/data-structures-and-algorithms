@@ -35,12 +35,11 @@ Write a function named validateWord that uses a regular expression pattern to va
 
 If the word is between 5 and 10 characters long, return true. Otherwise, return false.
 ------------------------------------------------------------------------------------------------ */
-
+//It should validate a word between 5 and 10 characters
 const validateWord = (word) => {
   // Solution code here...
-  const regex = /^\d{5,10}$/;
-
-  return regex.test(word);
+  const pattern = /^[a-zA-Z]{5,10}$/;
+  return pattern.test(word);
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -12,6 +12,8 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 const screenForNames = (arr) => {
   // Solution code here...
+  const regex = /^(Mr||Mrs||Ms||Dr)\.\s[A-Z][a-z]+$/;
+  return arr.filter((name) => regex.test(name));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,8 +102,14 @@ let starWarsData = [
   },
 ];
 
+//It should return only characters that are bigger than Luke
 let biggerThanLuke = (arr) => {
   // Solution code here...
+  let lukeMass = 77;
+  let biggerThanLuke = arr.filter((character) => {
+    return parseInt(character.mass) > lukeMass;
+  });
+  return biggerThanLuke.map((character) => character.name).join(" - ");
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -166,9 +174,30 @@ Here is a sample board:
   ['X', 'O', 'X'],
 ];
 ------------------------------------------------------------------------------------------------ */
-
+//It should return true if there are three in a row
+//It should return false if there are not three in a row
+//It should not treat empty 3 in row as winner
 const detectTicTacToeWin = (board) => {
   // Solution code here...
+  let win = false;
+  let check = (row1, col1, row2, col2, row3, col3) => {
+    if (
+      board[row1][col1] === board[row2][col2] &&
+      board[row2][col2] === board[row3][col3] &&
+      board[row1][col1] !== ""
+    ) {
+      win = true;
+    }
+  };
+  check(0, 0, 0, 1, 0, 2);
+  check(1, 0, 1, 1, 1, 2);
+  check(2, 0, 2, 1, 2, 2);
+  check(0, 0, 1, 0, 2, 0);
+  check(0, 1, 1, 1, 2, 1);
+  check(0, 2, 1, 2, 2, 2);
+  check(0, 0, 1, 1, 2, 2);
+  check(0, 2, 1, 1, 2, 0);
+  return win;
 };
 
 /* ------------------------------------------------------------------------------------------------
