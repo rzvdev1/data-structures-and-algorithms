@@ -1,3 +1,3 @@
 # Linked List Implementation
 
-![Linked List](/linked-list/linkedList.png)
+![Linked List](./linked-list/linkedList.png)
