@@ -54,4 +54,14 @@ describe("linked list test suite", () => {
       "{ a } -> { 1 } -> { b } -> { c } -> { 2 } -> { d } -> NULL"
     );
   });
+  test("kthFromEnd method returns null for k greater than the length of the linked list", () => {
+    const testLL = new LinkedList();
+    testLL.append(1);
+    testLL.append(2);
+    testLL.append(3);
+    testLL.append(4);
+
+    // k = 5, which is greater than the length of the linked list (4)
+    expect(testLL.kthFromEnd(5)).toBeNull();
+  });
 });
