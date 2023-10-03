@@ -51,9 +51,6 @@ const Movies = [
   },
 ];
 
-//  One function will sort the movies by most recent year first.
-//  One function will sort the movies, alphabetical by title, but will ignore any leading “A”s, “An”s, or “The”s.
-
 const sortByYear = (a, b) => {
   return b.year - a.year;
 };
