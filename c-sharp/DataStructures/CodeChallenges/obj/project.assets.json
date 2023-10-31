@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/julio/301/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/CodeChallenges.csproj",
+      "projectUniqueName": "/Users/julio/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/CodeChallenges.csproj",
       "projectName": "CodeChallenges",
-      "projectPath": "/Users/julio/301/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/CodeChallenges.csproj",
+      "projectPath": "/Users/julio/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/CodeChallenges.csproj",
       "packagesPath": "/Users/julio/.nuget/packages/",
-      "outputPath": "/Users/julio/301/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/obj/",
+      "outputPath": "/Users/julio/data-structures-and-algorithms/c-sharp/DataStructures/CodeChallenges/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/julio/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/julio/301/data-structures-and-algorithms/c-sharp/DataStructures/DataStructures/DataStructures.csproj": {
-              "projectPath": "/Users/julio/301/data-structures-and-algorithms/c-sharp/DataStructures/DataStructures/DataStructures.csproj"
+            "/Users/julio/data-structures-and-algorithms/c-sharp/DataStructures/DataStructures/DataStructures.csproj": {
+              "projectPath": "/Users/julio/data-structures-and-algorithms/c-sharp/DataStructures/DataStructures/DataStructures.csproj"
             }
           }
         }
@@ -96,7 +96,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }
